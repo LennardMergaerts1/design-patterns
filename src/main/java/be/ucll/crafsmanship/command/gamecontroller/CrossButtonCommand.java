@@ -11,4 +11,9 @@ public class CrossButtonCommand implements Command {
     public void execute() {
         receiver.actionCross();
     }
+
+    @Override
+    public void undo() {
+        System.out.println("Undo: Cross button action (Jump)");
+    }
 }
